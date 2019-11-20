@@ -35,13 +35,12 @@ a {
 
 
 .header > * {
-    text-align: right;
     letter-spacing: 2px;
     display: inline-block;
     text-align: left;
     color:white;
     font-weight: bold;
-    font-size: 2.1em;
+    font-size: 2em;
     padding:0px 10px;
 }
 
@@ -61,7 +60,7 @@ a {
 
 @media only screen and (max-width: 770px) {
     .header > *{
-        font-size: 1.7em;
+        font-size: 1.5em;
         padding-bottom: 2.5px 6px;
     }
     .header {
@@ -71,11 +70,33 @@ a {
 
 @media only screen and (max-width: 500px) {
     .header > *{
-        font-size: 1.2em;
+        font-size: 0.5em;
         padding-bottom: 2.5px 6px;
     }
+    .header > :first-child {
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        float: none;
+    }
     .header {
+        text-align: center;
         padding: 0.3em 0.5em;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .header {
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .header > *{
+        display: none;
+    }
+    .header > *:first-child {
+        display: initial;
+        float:none;
     }
 }
 
