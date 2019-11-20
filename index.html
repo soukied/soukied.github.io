@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="description" content="Website bio Adhya Adam Sulthan">	
 		<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="style.css">
 		<meta name="google-site-verification" content="OolenSVpmzNy-OjO8cnM5N57in5qhO075IXuGukaU_Y" />
@@ -16,5 +17,15 @@
 				<a href="#project">PROJECTS</a>
 			</div>
 			<a href="#projects">To the projects</a>
+			<audio class="hidden" style="display: none;" volume="0.25" id="automusic" controls src="https://listen.moe/fallback" autoplay></audio>
+			<script>
+				setTimeout(function(){
+					/**
+					  * @type {HTMLAudioElement}
+					  */
+					var automusic = document.getElementById("automusic");
+					automusic.volume = 1/4;
+				});
+			</script>
 	</body>
 </html>
