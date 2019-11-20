@@ -1,0 +1,84 @@
+
+html{
+    height: 100%;
+}
+body {
+    text-align: center;
+    margin:0px;
+    background: linear-gradient(to right bottom, #b0fff8, #00ccff) no-repeat;
+    height: 100%;
+}
+
+a {
+    color: blue;
+}
+
+.header {
+    margin-bottom: 1em;
+    padding: 0.6em 1em;
+    display: block;
+    text-align: right;
+    background-color: #000cad;
+    border-bottom: 2px solid black;
+}
+
+
+.header > :first-child {
+    float: left;
+    bottom:0px;
+}
+
+.header > :first-child:hover {
+    color:yellow;
+    cursor: default;
+}
+
+
+.header > * {
+    text-align: right;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: left;
+    color:white;
+    font-weight: bold;
+    font-size: 2.1em;
+    padding:0px 10px;
+}
+
+.header > a {
+    color:white;
+}
+
+.header > a:hover {
+    color:rgb(0, 241, 241);
+}
+
+* {
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .header > *{
+        font-size: 1.7em;
+        padding-bottom: 2.5px 6px;
+    }
+    .header {
+        padding: 0.4em 0.7em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header > *{
+        font-size: 1.2em;
+        padding-bottom: 2.5px 6px;
+    }
+    .header {
+        padding: 0.3em 0.5em;
+    }
+}
+
+:not(input, textarea) {
+    font-family: monospace;
+}
