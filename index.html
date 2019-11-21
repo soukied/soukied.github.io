@@ -5,27 +5,20 @@
 		<meta name="description" content="Website bio Adhya Adam Sulthan">	
 		<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="style.css">
-		<meta name="google-site-verification" content="OolenSVpmzNy-OjO8cnM5N57in5qhO075IXuGukaU_Y" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<meta name="google-site-verification" content="OolenSVpmzNy-OjO8cnM5N57in5qhO075IXuGukaU_Y"/>
 		<link rel="icon" href="./favicon.ico">
 		<meta charset="utf-8">
 		<title>Adhya Adam's bio page</title>
 	</head>
-	<body>
+	<body ng-app>
 			<div class="header">
 				<div class="title">SOUKIED</div>
 				<a href="#info">INFO</a>
 				<a href="#project">PROJECTS</a>
 			</div>
-			<a href="#projects">To the projects</a>
-			<audio class="hidden" style="display: none;" volume="0.25" id="automusic" controls src="https://listen.moe/fallback" autoplay></audio>
-			<script>
-				setTimeout(function(){
-					/**
-					  * @type {HTMLAudioElement}
-					  */
-					var automusic = document.getElementById("automusic");
-					automusic.volume = 1/4;
-				});
-			</script>
+			<div class="biobox">
+				Nama saya adhya adam sulthan
+			</div>
 	</body>
 </html>
