@@ -4,7 +4,7 @@
   "description": "My bio page",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public -b site"
   },
   "repository": {
     "type": "git",
