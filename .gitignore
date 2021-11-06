@@ -1,7 +1,1 @@
-*.bat
-*.html
-*.pdn
-.*
-!.gitignore
-
 /node_modules
